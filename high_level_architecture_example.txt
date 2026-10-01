@@ -1,0 +1,44 @@
+                    ┌──────────────────┐
+                    │  Mobile Client   │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                    ┌──────────────────┐
+                    │ API / Load       │
+                    │ Balancer         │
+                    └────────┬─────────┘
+                             │
+                             ▼
+                  ┌──────────────────────┐
+                  │ Recommendation       │
+                  │ Service              │
+                  └──────────┬───────────┘
+                             │
+            ┌────────────────┼────────────────┐
+            │                │                │
+            ▼                ▼                ▼
+      Profile DB       Course/Session     Search/Retrieval
+                           DB                 │
+                                              ▼
+                                         Vector DB
+            │                │                │
+            └────────────────┼────────────────┘
+                             │
+                             ▼
+                    External Services
+                  ┌──────────┼──────────┐
+                  │          │          │
+                  ▼          ▼          ▼
+             Occupancy   Locations   Events
+                             │
+                             ▼
+                       Routing/Maps
+
+                             │
+                             ▼
+                       ┌───────────┐
+                       │    LLM    │
+                       └───────────┘
+                             │
+                             ▼
+                       Recommendation
